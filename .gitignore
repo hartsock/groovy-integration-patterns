@@ -10,3 +10,6 @@
 
 bin/
 out/
+.gradle/
+build/
+
