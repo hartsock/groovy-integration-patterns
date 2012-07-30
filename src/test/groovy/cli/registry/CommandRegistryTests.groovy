@@ -36,7 +36,7 @@ class CommandRegistryTests {
 
         ] as ServiceRegistry;
 
-        def registry = new CommandRegistry([:],svcReg,argProcessor)
+        def registry = new CommandRegistry([:],svcReg,argProcessor,null)
         def frobRef = registry.get("frob")
         assert frobRef == null
         frobRef = registry.register(Frobnicate)
